@@ -1,0 +1,252 @@
+@charset "utf-8"; 
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.wrap {position:relative; max-width:100%;  margin:0 auto; overflow:hidden;}
+.blind {
+	position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border: none;
+    opacity: 0;
+    font: 0/0 m;
+    color: transparent;
+}
+
+.section { overflow: hidden; }
+.section .full-box { width: 100%; max-width: 860px; margin: 0 auto }
+.section .box {
+	max-width: 860px;
+	width: 100%;
+	margin: 0 auto;
+}
+.section h1 {margin-top: 30px;}
+.section img {width: 100%;}
+.section .button-group { margin-bottom: 30px; text-align: center; }
+.section .button-group .btn-event-submit {display: inline-block; width:48.83720%}
+
+/* main image */
+.main img {width: 100%;}
+
+/* slide 1  */
+.visual-slide {
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+/* slide 2 */
+.signatur-slide {
+	max-width: 860px;
+	margin: 14px auto 0;
+}
+.signatur-slide .button-box {
+	position: absolute;
+	left: 3.488372%;
+	bottom: 12.72727%;
+	width: 100%;
+}
+.signatur-slide .button-box .btn-go {
+    display: inline-block;
+    width:23.2558%
+}
+.signatur-slide .button-box .btn-counsel {
+    display: inline-block;
+    width:23.2558%;
+	margin-left: 6px;
+}
+
+/* event caution */
+.caution .img {margin: 0 auto; text-align: center;}
+
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+	width: 16px;
+	height: 35px;
+	background-image: url('../images/btn_prev.png');
+	background-size: cover;
+	background-blend-mode: overlay;
+	left: 20px;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+	width: 16px;
+	height: 35px;
+	background-image: url('../images/btn_next.png');
+	background-size: cover;
+	background-blend-mode: overlay;
+	right: 20px;
+}
+.swiper-pagination-fraction, 
+.swiper-pagination-custom, 
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 10px;
+}
+.swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: .3;
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+    opacity: 1;
+}
+
+/* modal */
+.blocker {
+    padding: 15px;
+	background-color: rgba(0,0,0,0.3);
+}
+.modal {
+	max-width: 800px;
+    width: 100%;
+	padding: 0 0 30px;
+	border-radius: 0;
+	box-shadow: none;
+}
+.modal .mt20 {margin-top: 10px}
+.modal .mt50 {margin-top: 25px}
+.modal a.close-modal {
+	top: 25px;
+	right: 15px;
+    width: 15px;
+    height: 15px;
+	background-image: url('../images/pop_btn_close.png');
+}
+.modal .pop-body {padding-top: 15px;}
+.modal .pop-body .select-answer1 {cursor:pointer;}
+.modal .pop-body .select-answer2 {cursor:pointer;}
+.modal .pop-body .qustion {
+	padding: 10px 15px;
+	font-size: 16px; 
+	font-size: 1.333rem; 
+	color: #fff; 
+	background-color: #1a1a1a;
+	letter-spacing: -1px;
+	text-align: left;
+	font-family:  'Noto Sans KR';
+}
+.modal .pop-body .a1 {
+	display: flex;
+	align-items: center;
+	min-height: 46px;
+	margin: 15px 24px 0;
+	padding: 8px 20px 8px 40px;
+	box-sizing: border-box;
+	border: 1px solid #bbbbbb;
+	font-size: 12px;
+	font-size: 1rem;
+	color: #000;
+	letter-spacing: -1px;
+	background: #f9f9f9 url('../images/pop_answer1_bg.jpg') no-repeat left center;
+    background-size: auto 12px;
+	cursor:pointer;
+}
+.modal .pop-body .a1.on {
+	color: #fff;
+	background: #1a1a1a url('../images/pop_answer1_bg_active.jpg') no-repeat left center;
+    background-size: auto 12px;
+}
+.modal .pop-body .a2 {
+	display: flex;
+	align-items: center;
+	min-height: 46px;
+	margin: 18px 24px 0;
+	padding: 8px 20px 8px 40px;
+	box-sizing: border-box;
+	border: 1px solid #bbbbbb;
+	font-size: 12px;
+	font-size: 1rem;
+	color: #000;
+	letter-spacing: -1px;
+	background: #f9f9f9 url('../images/pop_answer2_bg.jpg') no-repeat left center;
+    background-size: auto 12px;
+	cursor:pointer;
+}
+.modal .pop-body .a2.on {
+	color: #fff;
+	background: #1a1a1a url('../images/pop_answer2_bg_active.jpg') no-repeat left center;
+    background-size: auto 12px;
+}
+.modal .pop-body .qustion strong {font-weight: bold; font-size: 17px;  font-size: 1.417rem; color: #fff;}
+.modal .pop-body dl {display: flex; margin-bottom: 9px; }
+.modal .pop-body dt img {height: 31px }
+.modal .pop-body dd {flex-grow: 1; margin-left: 10px; margin-right: 15px; }
+.modal .pop-body dd input {
+	width: 100%;
+	height: 31px;
+	background-color: #f9f9f9;
+	border: 1px solid #bbbbbb;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+}
+.modal .check-box dt img { height: 18px;}
+.modal .check-box dd input[type="checkbox"] {width: 17px; height: 17px;}
+.modal .agree-img {
+    margin: 0 15px;
+}
+.modal .agree-text {
+    height: 145px;
+    overflow-y:auto;
+    padding: 15px 10px;
+    font-size: 11px;
+    color: #000;
+    background: #f9f9f9;
+}
+.modal .sns-box {display: flex; padding: 0 60px; text-align: center; justify-content: center;}
+.modal .sns-box span {display: inline-block; padding: 0 9px;}
+.modal .sns-box span img {width: 100%;}
+.modal .button-action {text-align: center; }
+.modal .button-action a:first-child {display: inline-block; width: 34%;}
+.modal .button-action a.btn-next {display: inline-block; width: 34%; }
+.modal .button-action a:nth-child(2) {margin-left: 5px;}
+.modal.resultModal100 .button-action a:first-child {display: inline-block; width: 60%}
+.modal.resultModal100 .button-action a:first-child img {width: 100%}
+.modal.resultModal100 .button-action img {width: 60%}
+.modal.infomationModal .button-action a {display: inline-block; width: 34%; }
+.modal.submitModal .button-action a {display: inline-block; width: 34%; }
+.modal.shareModal .button-action a {display: inline-block; width: 52%; max-width: inherit}
+.modal.shareModal .mt50 {margin-top: 15px;}
+
+.modal.resultModal100,
+.modal.infomationModal,
+.modal.submitModal {
+	max-width: 660px;
+}
+.modal.resultModal100 .button-action a:first-child {max-width: inherit}
+.modal.shareModal a.close-modal{top: 20px;}
+.modal.resultModal100 .pop-body,
+.modal.answerModal .pop-body {padding-top: 0;}
+.modal.answerModal .button-action a:first-child { max-width: 120px;}
+.modal.answerModal .button-action a.btn-next { max-width: 120px;}
+
+@media screen and (min-width: 480px) {
+	html, button, input, select, textarea {font-size: 16px;}
+    .section h1 {margin-top: 60px;}
+}
+@media screen and (min-width: 560px) {
+	.modal a.close-modal {
+		top: 35px;
+		right: 30px;
+		width: 30px;
+		height: 30px;
+	}
+	.modal.shareModal a.close-modal {top: 35px;}
+	.modal.answerModal a.close-modal {top: 25px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
