@@ -33,5 +33,5 @@ $(document).ready(function(){
 	})
 
 	// modal 열기
-	$('.shareModal').modal('show'); 
+	// $('.answerModal').modal('show'); 
 });
