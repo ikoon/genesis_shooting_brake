@@ -33,7 +33,7 @@ $(document).ready(function(){
 	})
 
 	// modal 열기
-	$('.shareModal').modal('show'); 
+	$('.infomationModal').modal('show'); 
 
     // $(' .a222').click(function(){
 	// 	$("#answerModal").modal('close');

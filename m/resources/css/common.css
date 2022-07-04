@@ -13,7 +13,7 @@
     color: transparent;
 }
 
-.section { overflow: hidden; }
+.section { background-color: #f7f7f7; overflow: hidden; }
 .section .full-box { width: 100%; max-width: 860px; margin: 0 auto }
 .section .box {
 	max-width: 860px;
@@ -43,7 +43,6 @@
 	position: absolute;
 	left: 3.488372%;
 	bottom: 12.72727%;
-	width: 100%;
 }
 .signatur-slide .button-box .btn-go {
     display: inline-block;
@@ -94,19 +93,18 @@
 /* modal */
 .blocker {
     padding: 15px;
-	background-color: rgba(0,0,0,0.3);
 }
 .modal {
 	max-width: 800px;
     width: 100%;
-	padding: 0 0 30px;
+	padding: 30px 24px;
 	border-radius: 0;
-	box-shadow: none;
 }
 .modal .mt20 {margin-top: 10px}
 .modal .mt50 {margin-top: 25px}
+.modal .pop-header {border-bottom: 2px solid #4b4b4b}
 .modal a.close-modal {
-	top: 25px;
+	top: 15px;
 	right: 15px;
     width: 15px;
     height: 15px;
@@ -116,23 +114,27 @@
 .modal .pop-body .select-answer1 {cursor:pointer;}
 .modal .pop-body .select-answer2 {cursor:pointer;}
 .modal .pop-body .qustion {
-	padding: 10px 15px;
+	width: 100%; 
+	margin-top: -15px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #4b4b4b;
 	font-size: 16px; 
 	font-size: 1.333rem; 
-	color: #fff; 
-	background-color: #1a1a1a;
+	color: #010101; 
 	letter-spacing: -1px;
-	text-align: left;
+	text-align: center;
 	font-family:  'Noto Sans KR';
 }
 .modal .pop-body .a1 {
 	display: flex;
 	align-items: center;
+	width: 100%;
 	min-height: 46px;
-	margin: 15px 24px 0;
+	margin-top: 15px;
 	padding: 8px 20px 8px 40px;
 	box-sizing: border-box;
 	border: 1px solid #bbbbbb;
+	border-radius: 10px;
 	font-size: 12px;
 	font-size: 1rem;
 	color: #000;
@@ -143,17 +145,19 @@
 }
 .modal .pop-body .a1.on {
 	color: #fff;
-	background: #1a1a1a url('../images/pop_answer1_bg_active.jpg') no-repeat left center;
+	background: #1d8abc url('../images/pop_answer1_bg_active.jpg') no-repeat left center;
     background-size: auto 12px;
 }
 .modal .pop-body .a2 {
 	display: flex;
 	align-items: center;
+	width: 100%;
 	min-height: 46px;
-	margin: 18px 24px 0;
+	margin-top: 18px;
 	padding: 8px 20px 8px 40px;
 	box-sizing: border-box;
 	border: 1px solid #bbbbbb;
+	border-radius: 10px;
 	font-size: 12px;
 	font-size: 1rem;
 	color: #000;
@@ -164,17 +168,18 @@
 }
 .modal .pop-body .a2.on {
 	color: #fff;
-	background: #1a1a1a url('../images/pop_answer2_bg_active.jpg') no-repeat left center;
+	background: #1d8abc url('../images/pop_answer2_bg_active.jpg') no-repeat left center;
     background-size: auto 12px;
 }
-.modal .pop-body .qustion strong {font-weight: bold; font-size: 17px;  font-size: 1.417rem; color: #fff;}
+.modal .pop-body .qustion strong {font-weight: bold; font-size: 17px;  font-size: 1.417rem; color: #1d8abc;}
 .modal .pop-body dl {display: flex; margin-bottom: 9px; }
 .modal .pop-body dt img {height: 31px }
-.modal .pop-body dd {flex-grow: 1; margin-left: 10px; margin-right: 15px; }
+.modal .pop-body dd {flex-grow: 1; margin-left: 10px; }
 .modal .pop-body dd input {
 	width: 100%;
 	height: 31px;
 	background-color: #f9f9f9;
+	border-radius: 5px;
 	border: 1px solid #bbbbbb;
 	font-size: 12px;
 	color: #000;
@@ -182,9 +187,6 @@
 }
 .modal .check-box dt img { height: 18px;}
 .modal .check-box dd input[type="checkbox"] {width: 17px; height: 17px;}
-.modal .agree-img {
-    margin: 0 15px;
-}
 .modal .agree-text {
     height: 145px;
     overflow-y:auto;
@@ -193,47 +195,26 @@
     color: #000;
     background: #f9f9f9;
 }
-.modal .sns-box {display: flex; padding: 0 60px; text-align: center; justify-content: center;}
+.modal .sns-box {display: flex; padding: 0 60px; text-align: center;}
 .modal .sns-box span {display: inline-block; padding: 0 9px;}
 .modal .sns-box span img {width: 100%;}
 .modal .button-action {text-align: center; }
-.modal .button-action a:first-child {display: inline-block; width: 34%;}
-.modal .button-action a.btn-next {display: inline-block; width: 34%; }
+.modal .button-action a:first-child {display: inline-block; width: 34%}
+.modal .button-action a.btn-next {display: inline-block; width: 34%}
 .modal .button-action a:nth-child(2) {margin-left: 5px;}
 .modal.resultModal100 .button-action a:first-child {display: inline-block; width: 60%}
 .modal.resultModal100 .button-action a:first-child img {width: 100%}
-.modal.resultModal100 .button-action img {width: 60%}
-.modal.infomationModal .button-action a {display: inline-block; width: 34%; }
-.modal.submitModal .button-action a {display: inline-block; width: 34%; }
-.modal.shareModal .button-action a {display: inline-block; width: 52%; max-width: inherit}
+.modal.resultModal100 .button-action img {width: 56.6489%}
+.modal.infomationModal .button-action a {display: inline-block; width: 34%}
+.modal.submitModal .button-action a {display: inline-block; width: 34%}
+.modal.shareModal .button-action a {display: inline-block; width: 52%}
 .modal.shareModal .mt50 {margin-top: 15px;}
-
-.modal.resultModal100,
-.modal.infomationModal,
-.modal.submitModal {
-	max-width: 660px;
-}
-.modal.resultModal100 .button-action a:first-child {max-width: inherit}
-.modal.shareModal a.close-modal{top: 20px;}
-.modal.resultModal100 .pop-body,
-.modal.answerModal .pop-body {padding-top: 0;}
-.modal.answerModal .button-action a:first-child { max-width: 120px;}
-.modal.answerModal .button-action a.btn-next { max-width: 120px;}
 
 @media screen and (min-width: 480px) {
 	html, button, input, select, textarea {font-size: 16px;}
     .section h1 {margin-top: 60px;}
 }
-@media screen and (min-width: 560px) {
-	.modal a.close-modal {
-		top: 35px;
-		right: 30px;
-		width: 30px;
-		height: 30px;
-	}
-	.modal.shareModal a.close-modal {top: 35px;}
-	.modal.answerModal a.close-modal {top: 25px;}
-}
+
 
 
 
